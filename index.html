@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=0">
+    <title>free</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <script>
+        // alert(window.screen.width)
+        window.onload = window.onresize = function () {
+            var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+            //找到标签名为html的第一个
+            var _html = document.getElementsByTagName('html')[0];
+            //如果屏幕宽度大于640
+            //就用 640/16=40
+            //小于640的时候 不确定 也是尺寸/40
+            view_width > 640 ? _html.style.fontSize = 640 / 16 + 'px' : _html.style.fontSize = view_width / 16 + 'px';
+            //最大网页尺寸640
+            //最大字体（根字体大小） 40
+        }
+    </script>
+</head>
+<body>
+
+<div class="right fl">
+    <div class="header_1">
+        <div class="hd_top_1">
+            <img src="images/top.png" alt="">
+        </div>
+        <div class="hd_btm_1">
+            <p class="o">Olia Gozha</p>
+            <span class="b">BetRate:    116 <img src="images/xing1.png" alt=""></span>
+            <input class="in"type="button" value=" CREATE CHALLENGE">
+        </div>
+    </div>
+    <div class="center_2">
+        <ul>
+            <li class="a"><a href="#">Activity Feed</a></li>
+            <li class="m"><a href="#">My Challenges</a></li>
+            <li class="d"><a href="#">Discussions</a></li>
+            <li class="y"><a href="#">My Stats</a></li>
+            <li class="s"><a href="#">My Connections</a></li>
+            <li class="t"><a href="#">Best Bets</a></li>
+        </ul>
+    </div>
+</div>
+<div class="left fr">
+<header>
+<div class="hd_top">
+    <span class="iconfont  dh fl">&#xe609;</span>
+    <input class="on" type="button" value="CIosed">
+    <input class="cn" type="button" value="Open">
+    <span class="iconfont  jh fr">&#xe668;</span>
+</div>
+<div class="hd_btm">
+    <ul>
+        <li class="yuan fl"><img src="images/yuan.png" alt="">Martin Groove</li>
+        <li class="xing fr"><img src="images/xing.png" alt="">175</li>
+    </ul>
+</div>
+<div class="hd_fot">
+    <p>I can basejump from the shard! Can you?</p>
+</div>
+</header>
+<div class="center">
+<div class="banner">
+    <div class="hui">01:11:03</div>
+    <div class="con">
+        <span class="iconfont  tou fl">&#xe619; 7 people</span>
+        <input type="button" value="ACCEPT">
+        <span class="iconfont fx fr">&#xe648; Share</span>
+    </div>
+</div>
+</div>
+<div class="hd_font">
+    <ul>
+        <li class="yuan fl"><img src="images/yuan1.png" alt="">Mark Anderson</li>
+        <li class="xing fr"><img src="images/xing.png" alt="">86</li>
+    </ul>
+</div>
+<div class="hd_ft">
+    <p>Reckon you can rise to any challenge? Prove it</p>
+</div>
+<div class="center_1">
+    <div class="banner_1">
+        <div class="hui_1">02:29:18</div>
+        <div class="con_1">
+            <span class="iconfont  tou fl">&#xe619; 7 people</span>
+            <input type="button" value="ACCEPT">
+            <span class="iconfont fx fr">&#xe648; Share</span>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
